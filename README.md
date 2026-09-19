@@ -111,8 +111,6 @@ Business Questions:
 - What is the repeat purchase rate?
 - How does customer behaviour vary across locations?
 
----
-
 ### 2. Sales & Orders
 
 The Sales & Orders Analysis module evaluates overall sales and order performance.
@@ -130,8 +128,6 @@ Business Questions:
 - What is the average order value?
 - How many orders were completed?
 - How does sales performance vary across categories and locations?
-
----
 
 ### 3. Product
 
@@ -151,8 +147,6 @@ Business Questions:
 - Which products are purchased most frequently?
 - How does product performance vary across categories?
 
----
-
 ### 4. Seller
 
 The Seller Analysis module evaluates seller performance.
@@ -170,8 +164,6 @@ Business Questions:
 - Which sellers received the highest number of orders?
 - Which sellers handled the highest number of items?
 - How does seller performance vary across locations?
-
----
 
 ### 5. Delivery & Fulfilment
 
@@ -420,8 +412,35 @@ Olist_Business_Intelligence/
 ├── app.py
 ├── README.md
 └── requirements.txt
+```
 
 ---
+
+## System Diagrams
+
+The project documentation includes several system and design diagrams that explain the structure, functionality, data flow, and major components of the Olist Business Intelligence & GenAI System.
+
+### ER Diagram
+
+The Entity Relationship (ER) Diagram represents the relationships between the major Olist datasets. It shows entities such as Customers, Orders, Order Items, Products, Categories, Sellers, Payments, Reviews, and Geolocation, along with their relationships and key fields.
+
+### Use Case Diagram
+
+The Use Case Diagram represents how different users and system components interact with the Olist Business Intelligence & GenAI System. It highlights the major functions available to the business user, including business analysis, dashboard interaction, and GenAI-based analysis.
+
+### DFD Level 0
+
+The Level 0 Data Flow Diagram provides a high-level view of how data moves through the system. It represents the major processes, data stores, business user interaction, and the connection with the GenAI service.
+
+### DFD Level 1
+
+The Level 1 Data Flow Diagram provides a more detailed view of the Dashboard Analytics process. It decomposes the dashboard into the five major business analysis areas: Customer, Sales & Orders, Product, Seller, and Delivery & Fulfilment, along with the consolidated KPI and visualization layer.
+
+### Functional Decomposition Diagram (FDD)
+
+The Functional Decomposition Diagram represents the major functional components of the Olist Business Intelligence & GenAI System. It breaks the overall system into its main analysis functions, including the five business areas and the GenAI Business Analyst.
+
+All diagrams are available in the `docs/` folder of the project.
 
 ## Results and Analysis
 
@@ -505,46 +524,49 @@ Clone the project repository from GitHub and open the project folder in Visual S
 ```bash
 git clone https://github.com/sneha-ch099/Olist_Business_Intelligence.git
 cd Olist_Business_Intelligence
+```
 
 ### 2. Create the Virtual Environment
 
 Create a Python virtual environment:
 
+```bash
 python -m venv .venv
+```
 
 ### 3. Activate the Virtual Environment
 
 On Windows, run:
 
+```bash
 .venv\Scripts\activate
+```
 
 ### 4. Install Required Packages
 
 Run:
 
+```bash
 pip install -r requirements.txt
+```
 
 ### 5. Configure the Gemini API Key
 
-Create the following file:
+The Gemini API key is stored securely in:
 
-.streamlit/secrets.toml
+`.streamlit/secrets.toml`
 
-Add the following line:
+The API key is not included directly in the Python source code.
 
-GEMINI_API_KEY = "YOUR_API_KEY"
-
-Replace YOUR_API_KEY with a valid Gemini API key.
-
-The API key is not hardcoded directly into the Python source code.
-
-The .streamlit/secrets.toml file is included in .gitignore and should not be uploaded to GitHub.
+The `.streamlit/secrets.toml` file should not be uploaded to GitHub.
 
 ### 6. Run the Streamlit Application
 
 Run:
 
+```bash
 streamlit run app.py
+```
 
 The application will open in the web browser.
 
@@ -552,11 +574,10 @@ The application will open in the web browser.
 
 The application contains:
 
-Executive Dashboard
-Customer Analysis
-Sales & Orders Analysis
-Product Analysis
-Seller Analysis
-Delivery & Fulfilment Analysis
-GenAI Business Analyst
-```
+- Executive Dashboard
+- Customer Analysis
+- Sales & Orders Analysis
+- Product Analysis
+- Seller Analysis
+- Delivery & Fulfilment Analysis
+- GenAI Business Analyst
