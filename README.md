@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The Olist Business Intelligence & GenAI System is an interactive business analytics application developed using the Olist e-commerce dataset.
+The Olist Business Intelligence & GenAI System is an interactive business analytics application developed using the Olist Brazilian e-commerce dataset.
 
 The system transforms raw e-commerce data into meaningful business insights through data cleaning, data modelling, KPI analysis, interactive dashboards, and Generative AI.
 
@@ -18,6 +18,8 @@ In addition, the system includes a GenAI Business Analyst that allows managers a
 
 The overall objective is to transform Olist data into actionable business information that can support business analysis and decision-making.
 
+---
+
 ## Problem Statement
 
 The Olist e-commerce dataset contains information about customers, orders, products, sellers, payments, reviews, and delivery activities. However, the raw data is distributed across multiple datasets, making it difficult to obtain a consolidated view of business performance.
@@ -27,6 +29,8 @@ Business users need a system that can transform this raw data into clear and mea
 The project addresses this problem by developing an interactive Business Intelligence system that integrates and analyses the Olist datasets using Python, Pandas, and Streamlit.
 
 The system also incorporates Generative AI to answer predefined business questions using calculated data evidence and provide simple business explanations and recommendations.
+
+---
 
 ## Project Objectives
 
@@ -40,6 +44,8 @@ The main objectives of the project are:
 - To develop an interactive Streamlit dashboard with KPIs, filters, charts, and data tables.
 - To integrate Generative AI for answering predefined business questions using actual data evidence.
 - To provide business explanations and practical recommendations based on the analysed results.
+
+---
 
 ## Dataset
 
@@ -61,6 +67,8 @@ These datasets are loaded using Pandas and combined through relevant keys to cre
 
 The project uses the underlying customer, order, product, seller, payment, review, category, and geographic information to support the five selected business areas.
 
+---
+
 ## Data Model
 
 The project uses an integrated data model to connect the different Olist datasets and support business analysis.
@@ -80,378 +88,290 @@ A consolidated analytical sales dataset is created by joining the relevant table
 
 The data model allows information from multiple Olist datasets to be analysed together through Python and Pandas.
 
-## Business Areas & KPIs
+---
 
-The Business Intelligence system focuses on five major business areas.
+## Business Areas and KPIs
+
+The system focuses on five business areas as required for the project.
 
 ### 1. Customer
 
-The Customer analysis focuses on understanding customer activity and repeat purchasing behaviour.
+The Customer Analysis module focuses on customer base and repeat purchasing behaviour.
 
-**KPIs:**
+Key Performance Indicators:
+
 - Total Customers
 - Repeat Customers
 - Repeat Purchase Rate
 
+Business Questions:
+
+- How many customers are present in the dataset?
+- How many customers made more than one purchase?
+- What is the repeat purchase rate?
+- How does customer behaviour vary across locations?
+
+---
+
 ### 2. Sales & Orders
 
-The Sales & Orders analysis evaluates overall order and sales performance.
+The Sales & Orders Analysis module evaluates overall sales and order performance.
 
-**KPIs:**
+Key Performance Indicators:
+
 - Total Orders
 - Total Sales
 - Average Order Value
 - Items Sold
 
+Business Questions:
+
+- Which month had the highest sales?
+- What is the average order value?
+- How many orders were completed?
+- How does sales performance vary across categories and locations?
+
+---
+
 ### 3. Product
 
-The Product analysis evaluates product and category performance.
+The Product Analysis module evaluates product and category performance.
 
-**KPIs:**
+Key Performance Indicators:
+
 - Product Sales
 - Product Revenue
 - Items Sold
 - Top Products
 
+Business Questions:
+
+- Which product categories generate the highest sales?
+- Which products have high sales but low ratings?
+- Which products are purchased most frequently?
+- How does product performance vary across categories?
+
+---
+
 ### 4. Seller
 
-The Seller analysis evaluates seller contribution and performance.
+The Seller Analysis module evaluates seller performance.
 
-**KPIs:**
+Key Performance Indicators:
+
 - Seller Revenue
 - Orders per Seller
 - Items per Seller
 - Top Sellers
 
+Business Questions:
+
+- Which sellers generated the highest revenue?
+- Which sellers received the highest number of orders?
+- Which sellers handled the highest number of items?
+- How does seller performance vary across locations?
+
+---
+
 ### 5. Delivery & Fulfilment
 
-The Delivery & Fulfilment analysis evaluates the efficiency and timeliness of order delivery.
+The Delivery & Fulfilment Analysis module evaluates order delivery performance.
 
-**KPIs:**
+Key Performance Indicators:
+
 - Average Delivery Days
 - On-Time Delivery Rate
 - Late Delivery Rate
 - Average Delay
 
-The dashboard provides relevant filters, charts, KPI cards, and data tables for analysing these business areas.
+Business Questions:
 
-## System Diagrams
+- What is the average delivery time?
+- What percentage of orders were delivered on time?
+- Which states have higher late delivery rates?
+- What is the average delay for late deliveries?
+- Does delivery performance appear to be associated with review scores?
 
-The project includes the following diagrams to represent the system structure, users, data flow, and functional components:
-
-### 1. Entity Relationship (ER) Diagram
-
-The ER Diagram represents the relationships between the major Olist datasets, including customers, orders, order items, products, sellers, payments, reviews, categories, and geolocation.
-
-**File:** `docs/ER_Diagram.png`
-
-### 2. Use Case Diagram
-
-The Use Case Diagram represents how business users and other system components interact with the Olist Business Intelligence and GenAI system.
-
-**File:** `docs/Use_Case_Diagram.png`
-
-### 3. Data Flow Diagram – Level 0
-
-The Level 0 DFD provides a high-level view of the major processes, data stores, users, and external services involved in the system.
-
-**File:** `docs/DFD_Level_0.png`
-
-### 4. Data Flow Diagram – Level 1
-
-The Level 1 DFD provides a detailed view of the dashboard analytics process and its five major business analysis areas.
-
-**File:** `docs/DFD_Level_1.png`
-
-### 5. Functional Decomposition Diagram (FDD)
-
-The FDD represents the functional structure of the Olist Business Intelligence and GenAI system, including the five business analysis areas and the GenAI Business Analyst.
-
-**File:** `docs/FDD.png`
+---
 
 ## Technologies Used
 
 The project uses the following technologies and tools:
 
-- **Python** — Used for data processing, analysis, and application development.
-- **Pandas** — Used for data cleaning, transformation, joining datasets, and KPI calculations.
-- **Streamlit** — Used to develop the interactive Business Intelligence dashboard.
-- **Google Gemini API** — Used to provide Generative AI-based business explanations and recommendations.
-- **Google GenAI SDK** — Used to connect the Streamlit application with the Gemini API.
-- **Matplotlib** — Used for data visualisation where required.
-- **Git & GitHub** — Used for version control and project repository management.
-- **Visual Studio Code** — Used as the development environment.
-- **CSV Files** — Used as the source format for the Olist datasets.
+- Python
+- Pandas
+- NumPy
+- Streamlit
+- Matplotlib
+- Google Gemini API
+- Git
+- GitHub
+- Visual Studio Code
 
-## Dashboard & Application Features
+---
 
-The Streamlit application provides an interactive dashboard for analysing Olist business performance across the five selected business areas.
+## Python and Pandas Analysis
 
-### Executive Dashboard
+Python and Pandas are used for data loading, cleaning, transformation, joining, aggregation, and analysis.
 
-The main dashboard provides a consolidated overview of business performance through:
+The analytical workflow includes:
 
-- Total Sales
-- Total Orders
-- Average Order Value
-- Items Sold
-- Monthly Sales Trend
-- Top Product Categories
-- Top Sellers
-- Delivery Performance by State
+1. Loading the Olist CSV datasets.
+2. Cleaning and preparing the data.
+3. Converting relevant date fields into datetime format.
+4. Joining related datasets using primary and foreign keys.
+5. Creating a consolidated analytical sales dataset.
+6. Calculating KPIs using Pandas.
+7. Applying filters to the analytical data.
+8. Generating tables and visualisations.
+9. Passing calculated evidence to the GenAI module.
 
-Interactive filters allow users to explore the data based on relevant business dimensions.
+The project uses Pandas aggregation functions such as `groupby()`, `sum()`, `mean()`, `nunique()`, and time-based resampling for business analysis.
 
-### Customer Analysis
+---
 
-The Customer page provides:
+## Dashboard
 
-- Total Customers
-- Repeat Customers
-- Repeat Purchase Rate
-- State and city-based filtering
-- Customer-related data visualisations and tables
-- Business interpretation of customer behaviour
+The application is developed using Streamlit and provides an interactive Business Intelligence dashboard.
 
-### Sales & Orders Analysis
+The main application contains:
 
-The Sales & Orders page provides:
+- Executive Dashboard
+- Customer Analysis
+- Sales & Orders Analysis
+- Product Analysis
+- Seller Analysis
+- Delivery & Fulfilment Analysis
+- GenAI Business Analyst
 
-- Total Orders
-- Total Sales
-- Average Order Value
-- Items Sold
-- Sales trends
-- Category-level sales analysis
-- Relevant filters and data tables
-- Business interpretation of sales performance
+Each analysis page follows a common structure:
 
-### Product Analysis
+**Title → Business Question → KPI Cards → Filters → Charts → Data Table → Business Interpretation**
 
-The Product page provides:
+The dashboard supports interactive filtering using relevant business dimensions such as:
 
-- Product Sales
-- Product Revenue
-- Items Sold
-- Top-performing product categories
-- Product and category performance analysis
-- Interactive filters and data tables
-- Business interpretation of product performance
+- State
+- City
+- Product Category
+- Seller
+- Payment Type
+- Order Status
+- Review Score
+- Date
 
-### Seller Analysis
+Only relevant filters are provided for each business area.
 
-The Seller page provides:
-
-- Seller Revenue
-- Orders per Seller
-- Items per Seller
-- Top Sellers
-- Seller location-based filtering
-- Seller performance visualisations and tables
-- Business interpretation of seller performance
-
-### Delivery & Fulfilment Analysis
-
-The Delivery & Fulfilment page provides:
-
-- Average Delivery Days
-- On-Time Delivery Rate
-- Late Delivery Rate
-- Average Delay
-- Delivery performance by customer state
-- Seller location-based delivery analysis
-- Interactive filters and data tables
-- Business interpretation of delivery performance
-
-All analysis pages follow a consistent structure:
-
-**Business Question → KPI Cards → Filters → Charts → Data Table → Business Interpretation**
+---
 
 ## Business Questions
 
-The system is designed to answer important business questions across the five selected business areas.
+The system addresses business questions across the five selected business areas.
 
-### Customer
+### Customer Questions
 
 - Who are our top customers by number of orders?
-- What proportion of customers are repeat customers?
-- How does customer activity vary across different locations?
+- How many customers are repeat customers?
+- What is the repeat purchase rate?
 
-### Sales & Orders
+### Sales & Orders Questions
 
 - Which month had the highest sales?
-- What is the overall sales and order performance?
-- Which product categories contribute the most to sales?
+- What is the total sales value?
 - What is the average order value?
+- How many items were sold?
 
-### Product
+### Product Questions
 
-- Which products or categories generate the highest sales?
 - Which products have high sales but low ratings?
-- How do product categories differ in terms of sales and orders?
+- Which product categories generate the highest sales?
+- Which products have the highest number of orders?
 
-### Seller
+### Seller Questions
 
 - Which sellers generated the highest revenue?
-- Which sellers handled the highest number of orders?
-- How does seller performance vary across locations?
+- Which sellers received the highest number of orders?
+- Which sellers handled the highest number of items?
 
-### Delivery & Fulfilment
+### Delivery & Fulfilment Questions
 
 - Which states have the highest late delivery rate?
 - What is the average delivery time?
-- What proportion of orders are delivered on time?
-- What is the average delivery delay?
+- What is the average delay for late deliveries?
 
-### Cross-Business Analysis
+### Cross-Analysis Question
 
 - Do late deliveries appear to be associated with lower review scores?
 
-These business questions are supported by calculated data evidence from the Olist dataset and are used by the dashboard and GenAI Business Analyst.
+---
 
-## GenAI Integration
+## GenAI Business Analyst
 
-The project includes a GenAI Business Analyst that uses Google Gemini to provide business explanations based on actual data calculated from the Olist dataset.
+The project includes a Generative AI Business Analyst that uses Google Gemini to provide business explanations based on calculated data evidence.
 
-The GenAI workflow follows this architecture:
+The GenAI workflow is:
 
-**Manager Question → Identify Required Analysis → Pandas Calculation → Actual Data Result → Gemini → Business Explanation → Business Recommendation**
+**Manager Question**
 
-### GenAI Process
+↓
 
-1. The manager selects a predefined business question.
-2. The system identifies the analysis required to answer the question.
-3. Python and Pandas calculate the required results from the Olist data.
-4. The calculated results are passed to the Gemini API as data evidence.
-5. Gemini explains the results in simple business language.
-6. The system provides a practical business recommendation based only on the calculated evidence.
+**Identify Required Analysis**
 
-### GenAI Business Questions
+↓
 
-The GenAI Business Analyst supports questions related to:
+**Pandas Calculation**
 
-- Top customers by number of orders
-- Highest sales month
-- Products with high sales but low ratings
-- Top sellers by revenue
-- States with the highest late delivery rate
-- Relationship between late deliveries and review scores
+↓
 
-### API Key Security
+**Actual Data Result**
 
-The Gemini API key is stored securely using Streamlit secrets and is not hardcoded in the application source code.
+↓
 
-The secrets file is excluded from Git tracking through `.gitignore` to prevent accidental exposure of the API key.
+**Google Gemini**
 
-## Results & Key Insights
+↓
 
-The developed Business Intelligence system successfully integrates the Olist datasets and provides interactive analysis across the five selected business areas.
+**Business Explanation**
 
-The dashboard allows users to identify important business patterns through KPI cards, filters, charts, and detailed data tables.
+↓
 
-### Customer Insights
+**Business Recommendation**
 
-Customer analysis provides information about the total customer base, repeat customers, and repeat purchase rate. This helps in understanding customer purchasing behaviour and engagement.
+The GenAI module does not directly ask Gemini to calculate the raw dataset. Instead, the required analysis is first performed using Python and Pandas. The resulting evidence is then provided to Gemini for explanation.
 
-### Sales & Orders Insights
+This approach helps ensure that the numerical results shown to the user are based on the project data.
 
-Sales analysis provides information about total sales, total orders, average order value, items sold, and monthly sales trends. This helps identify changes in sales performance over time.
+---
 
-### Product Insights
+## GenAI Example Questions
 
-Product analysis helps identify high-performing product categories and compare categories based on sales and order activity.
+The GenAI Business Analyst supports predefined questions such as:
 
-### Seller Insights
+- Who are our top customers by number of orders?
+- Which month had the highest sales?
+- Which products have high sales but low ratings?
+- Which sellers generated the highest revenue?
+- Which states have the highest late delivery rate?
+- Do late deliveries appear to be associated with lower review scores?
 
-Seller analysis provides information about seller revenue, orders, items sold, and top-performing sellers. This helps understand seller contribution to the marketplace.
+The system displays the calculated data evidence and then generates a business-oriented explanation.
 
-### Delivery & Fulfilment Insights
+---
 
-Delivery analysis evaluates average delivery time, on-time delivery, late delivery, and average delay. The analysis can help identify locations and patterns associated with delivery performance.
+## GenAI API Security
 
-### GenAI Insights
+The Gemini API key is stored securely using Streamlit secrets.
 
-The GenAI Business Analyst converts calculated data results into simple business explanations and recommendations. This allows managers and analysts to interpret the results without manually analysing every data table.
+The API key is stored in:
 
-The results generated by the system are based on the available Olist dataset and the calculations implemented using Python and Pandas.
+`.streamlit/secrets.toml`
 
-## Limitations
+The key is not hardcoded directly into the Python source code.
 
-The project has the following limitations:
+The `.streamlit/secrets.toml` file is included in `.gitignore` so that the API key is not uploaded to GitHub.
 
-- The Olist dataset contains historical e-commerce data and may not represent current business conditions.
-- The dataset does not contain complete information about product costs, operating costs, marketing costs, or seller commissions.
-- Therefore, actual business profit or profit margin cannot be calculated reliably from the available data.
-- The analysis depends on the quality and completeness of the original Olist datasets.
-- Some orders may have missing delivery dates, review information, or other fields.
-- The GenAI Business Analyst is limited to the predefined business questions implemented in the application.
-- GenAI responses depend on the data evidence provided to the model and may be affected by temporary API availability or service limitations.
-- The project is designed for business analysis and decision support and does not replace detailed financial, operational, or managerial analysis.
-
-## How to Run the Project
-
-Follow the steps below to run the Olist Business Intelligence & GenAI System locally.
-
-### 1. Clone the Repository
-
-Clone the project repository from GitHub and open the project folder in Visual Studio Code.
-
-### 2. Create and Activate the Virtual Environment
-
-Create a Python virtual environment:
-
-```bash
-python -m venv .venv
-
-
-### 2.1 Activate the Virtual Environment
-
-On Windows, run:
-
-.venv\Scripts\activate
-
-
-### 3. Install Required Packages
-
-Run:
-
-pip install -r requirements.txt
-
-
-
-### 4. Configure the Gemini API Key
-
-The Gemini API key is stored securely in:
-
-.streamlit/secrets.toml
-
-The API key is not included directly in the Python source code.
-
-
-### 5. Run the Streamlit Application
-
-Run:
-
-streamlit run app.py
-
-
-The application will open in the web browser.
-
-### 6. Application Pages
-
-The application contains:
-
-Executive Dashboard
-Customer Analysis
-Sales & Orders Analysis
-Product Analysis
-Seller Analysis
-Delivery & Fulfilment Analysis
-GenAI Business Analyst
+---
 
 ## Project Structure
-
-The project is organized into separate folders and files for data processing, analysis, dashboard pages, documentation, and GenAI functionality.
 
 ```text
 Olist_Business_Intelligence/
@@ -459,17 +379,23 @@ Olist_Business_Intelligence/
 ├── .streamlit/
 │   └── secrets.toml
 │
-├── .venv/
-│
 ├── data/
-│   └── Olist CSV datasets
+│   ├── olist_customers_dataset.csv
+│   ├── olist_geolocation_dataset.csv
+│   ├── olist_order_items_dataset.csv
+│   ├── olist_order_payments_dataset.csv
+│   ├── olist_order_reviews_dataset.csv
+│   ├── olist_orders_dataset.csv
+│   ├── olist_products_dataset.csv
+│   ├── olist_sellers_dataset.csv
+│   └── product_category_name_translation.csv
 │
 ├── docs/
-│   ├── ER_Diagram.png
-│   ├── Use_Case_Diagram.png
 │   ├── DFD_Level_0.png
 │   ├── DFD_Level_1.png
-│   └── FDD.png
+│   ├── ER_Diagram.png
+│   ├── FDD.png
+│   └── Use_Case_Diagram.png
 │
 ├── pages/
 │   ├── 1_Customer.py
@@ -494,3 +420,143 @@ Olist_Business_Intelligence/
 ├── app.py
 ├── README.md
 └── requirements.txt
+
+---
+
+## Results and Analysis
+
+The application provides interactive analysis of the Olist dataset across the five selected business areas.
+
+The dashboard calculates business KPIs dynamically based on the available data and selected filters.
+
+The main analysis areas include:
+
+- Customer base and repeat customer analysis.
+- Sales and order performance analysis.
+- Monthly sales trends.
+- Product and category performance.
+- Seller revenue and order performance.
+- Delivery time and fulfilment performance.
+- State-level delivery analysis.
+- Review and delivery relationship analysis.
+- AI-generated explanations based on calculated evidence.
+
+The dashboard allows users to change filters and observe how business metrics and visualisations change.
+
+---
+
+## Business Insights
+
+The system supports business analysis by helping users:
+
+- Understand customer purchasing behaviour.
+- Identify repeat customer patterns.
+- Monitor sales and order performance.
+- Identify high-performing products and categories.
+- Compare seller performance.
+- Identify delivery and fulfilment issues.
+- Examine geographical differences in delivery performance.
+- Use Generative AI to interpret calculated results in simple business language.
+
+The insights generated by the dashboard depend on the selected filters and the underlying Olist dataset.
+
+---
+
+## Important Data Considerations
+
+The Olist dataset does not contain a direct quantity field for products. Therefore, item records are counted when calculating the number of items sold.
+
+The project does not calculate actual business profit because the dataset does not provide all required cost information such as:
+
+- Product cost
+- Operating cost
+- Marketing cost
+- Commission cost
+
+Therefore, sales and revenue-related metrics should not be interpreted as net profit.
+
+Delivery metrics are calculated using the available purchase, delivery, and estimated delivery dates.
+
+---
+
+## Limitations
+
+The project has the following limitations:
+
+- The analysis is based on the available Olist dataset and therefore reflects the information contained in that dataset.
+- The dataset represents historical e-commerce transactions and may not reflect current business conditions.
+- Actual profit cannot be calculated because complete cost information is not available.
+- Some orders may have missing delivery dates, which affects delivery calculations.
+- The GenAI module depends on the availability of the Gemini API.
+- AI-generated explanations are based only on the calculated evidence supplied to the model.
+- The project uses predefined business questions rather than unrestricted natural-language analysis.
+- The geographic dataset contains multiple records for location information and should not be treated as a simple one-row-per-ZIP-code lookup.
+
+---
+
+## How to Run the Project
+
+Follow the steps below to run the Olist Business Intelligence & GenAI System locally.
+
+### 1. Clone the Repository
+
+Clone the project repository from GitHub and open the project folder in Visual Studio Code.
+
+```bash
+git clone https://github.com/sneha-ch099/Olist_Business_Intelligence.git
+cd Olist_Business_Intelligence
+
+### 2. Create the Virtual Environment
+
+Create a Python virtual environment:
+
+python -m venv .venv
+
+### 3. Activate the Virtual Environment
+
+On Windows, run:
+
+.venv\Scripts\activate
+
+### 4. Install Required Packages
+
+Run:
+
+pip install -r requirements.txt
+
+### 5. Configure the Gemini API Key
+
+Create the following file:
+
+.streamlit/secrets.toml
+
+Add the following line:
+
+GEMINI_API_KEY = "YOUR_API_KEY"
+
+Replace YOUR_API_KEY with a valid Gemini API key.
+
+The API key is not hardcoded directly into the Python source code.
+
+The .streamlit/secrets.toml file is included in .gitignore and should not be uploaded to GitHub.
+
+### 6. Run the Streamlit Application
+
+Run:
+
+streamlit run app.py
+
+The application will open in the web browser.
+
+### 7. Application Pages
+
+The application contains:
+
+Executive Dashboard
+Customer Analysis
+Sales & Orders Analysis
+Product Analysis
+Seller Analysis
+Delivery & Fulfilment Analysis
+GenAI Business Analyst
+```
