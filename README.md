@@ -1,5 +1,7 @@
 # Olist Business Intelligence & GenAI System
 
+### 🚀 [Launch Live Dashboard](https://olistbusinessintelligence-ipfskjucsynkklburkqsfp.streamlit.app)
+
 ## Project Overview
 
 The Olist Business Intelligence & GenAI System is an interactive business analytics application developed using the Olist Brazilian e-commerce dataset.
