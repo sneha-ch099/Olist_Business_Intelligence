@@ -22,11 +22,6 @@ In addition, the system includes a GenAI Business Analyst powered by Google's Ge
 
 The main objective is to transform raw Olist data into actionable information that supports business analysis and decision-making.
 
-**GitHub Repository:**  
-https://github.com/sneha-ch099/Olist_Business_Intelligence
-
-**Live Demo:** Add your Streamlit Cloud URL here if the latest version is deployed.
-
 ---
 
 ## 🎯 Problem Statement
